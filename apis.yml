@@ -1,23 +1,59 @@
 aid: pellerex
+
 name: Technology Leads Pty. Ltd.
-description: 'Technology Leads Pty. Ltd. is a company surfaced via the API Evangelist harvest backlog
-  (source: g2-catalog) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.pellerex.com/public/ecosystem/web/home/pellerex-ecosystem-url-thumbnail.png
+
+description: 'Technology Leads Pty. Ltd., operating as Pellerex, provides AI‑powered enterprise NoOps platforms combining PaaS and identity provisioning. Their solutions enable developers to integrate foundational APIs and services for building scalable enterprise software, offering a unified interface for automation, security, and operational efficiency across cloud environments.'
+
 url: https://raw.githubusercontent.com/api-evangelist/pellerex/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/pellerex-hosts.yml
+- type: DomainSecurity
+  url: security/pellerex-domain-security.yml
 - type: Website
   url: https://pellerex.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-21'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://pellerex.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

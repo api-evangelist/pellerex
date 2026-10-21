@@ -1,0 +1,7 @@
+generated: '2026-10-21'
+method: derived
+source: "Checked https://pellerex.com/mcp and https://pellerex.com/mcp.json, no MCP endpoint found."
+deployment:
+  mode: none
+  auth: unknown
+  verified: derived
